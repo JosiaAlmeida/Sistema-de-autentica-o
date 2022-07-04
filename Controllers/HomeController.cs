@@ -1,10 +1,13 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using AuthAPIMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuthAPIMVC.Controllers;
 
-public class HomeController : Controller
+[ApiController]
+[Route("v1")]
+public class HomeController : ControllerBase
 {
     private readonly ILogger<HomeController> _logger;
 
@@ -12,20 +15,31 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
+    [HttpGet]
+    [AllowAnonymous]
     public IActionResult Index()
     {
-        return View();
+        return Ok("Anonimo");
     }
 
-    public IActionResult Privacy()
+
+    [HttpGet("Management")]
+    [Route("Management")]
+    [Authorize(Roles ="manager")]
+    public IActionResult Management()
     {
-        return View();
+        return Ok("Management");
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    [HttpGet("employee")]
+    [Authorize(Roles ="employee, manager")]
+    public IActionResult Employee(){
+        return Ok("employee");
+    }
+
+    [HttpGet("auth")]
+    [Authorize]
+    public IActionResult Authentication(){
+        return Ok("Authentication "+User.Identity.Name);
     }
 }

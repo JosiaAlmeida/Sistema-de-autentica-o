@@ -1550,23 +1550,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JosiaAlmeida\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\j.almeida\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JosiaAlmeida\\Documents\\projetos\\AspNet\\AuthAPIMVC\\AuthAPIMVC.csproj",
+      "projectUniqueName": "C:\\Users\\j.almeida\\Documents\\Sistema-de-autentica-o\\AuthAPIMVC.csproj",
       "projectName": "AuthAPIMVC",
-      "projectPath": "C:\\Users\\JosiaAlmeida\\Documents\\projetos\\AspNet\\AuthAPIMVC\\AuthAPIMVC.csproj",
-      "packagesPath": "C:\\Users\\JosiaAlmeida\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JosiaAlmeida\\Documents\\projetos\\AspNet\\AuthAPIMVC\\obj\\",
+      "projectPath": "C:\\Users\\j.almeida\\Documents\\Sistema-de-autentica-o\\AuthAPIMVC.csproj",
+      "packagesPath": "C:\\Users\\j.almeida\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\j.almeida\\Documents\\Sistema-de-autentica-o\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JosiaAlmeida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\j.almeida\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1619,7 +1615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
